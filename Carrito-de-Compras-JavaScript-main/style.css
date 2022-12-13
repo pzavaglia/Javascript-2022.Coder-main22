@@ -1,6 +1,6 @@
 body{
     font-family: system-ui;
-    background-color: #e4e4e8;
+   background-color: #e4e4e8;
 }
 header{
     background-color: #e4e4e8;
@@ -57,8 +57,13 @@ header{
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-
     min-width: 290px;
+    height: 15em;
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 30%;
+    border: 1px solid;
 }
 
 .cart:hover{
