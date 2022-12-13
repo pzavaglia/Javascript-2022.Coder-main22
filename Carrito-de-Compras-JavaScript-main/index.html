@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logoShop.png" alt="">
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                     <div class="item">
+                        <div class="item-content">
+                            <h5>carrito vacio</h5>
+                        </div>
+                        <span>X</span>
+                    </div>
+                    <div class="item">
+                        <div class="item-content">
+                            <h5>carrito vacio</h5>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div>
+                </div>
+                <h2>Total: $ <strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/tarot1.jpg" alt="">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Tarot Rider Waite 78 Cartas</p>
+                <a href="" data-id="1" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-2.jpg" alt="">
+                    <p>$<span>3500</span></p>
+                </div>
+                <p class="title"> producto 2</p>
+                <a href="" class="btn-add-cart" data-id="2">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-3.jpg" alt="">
+                    <p>$<span>1550</span></p>
+                </div>
+                <p class="title"> producto 3</p>
+                <a href="" data-id="3" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-4.jpg" alt="">
+                    <p>$<span>2020</span></p>
+                </div>
+                <p class="title"> producto 4</p>
+                <a href="" data-id="4" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-5.jpg" alt="">
+                    <p>$<span>1900</span></p>
+                </div>
+                <p class="title"> producto 5</p>
+                <a href="" data-id="5" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/tarot1.jpg" alt="">
+                    <p>$<span>4500</span></p>
+                </div>
+                <p class="title"> producto 6</p>
+                <a href="" data-id="6" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-2.jpg" alt="">
+                    <p>$<span>2399</span></p>
+                </div>
+                <p class="title"> producto 7</p>
+                <a href="" data-id="7" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-3.jpg" alt="">
+                    <p>$<span>5000</span></p>
+                </div>
+                <p class="title"> producto 8</p>
+                <a href="" data-id="8" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-4.jpg" alt="">
+                    <p>$<span>1600</span></p>
+                </div>
+                <p class="title">producto 9</p>
+                <a href="" data-id="9" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-5.jpg" alt="">
+                    <p>$<span>1750</span></p>
+                </div>
+                <p class="title"> producto 10</p>
+                <a href="" data-id="10" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/tarot1.jpg" alt="">
+                    <p>$<span>4500</span></p>
+                </div>
+                <p class="title"> producto 11</p>
+                <a href="" data-id="11" class="btn-add-cart">agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+<script src="./custom.js" ></script>
+</body>
+</html>
