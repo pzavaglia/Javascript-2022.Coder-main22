@@ -93,9 +93,7 @@ function procesarCompra() {
                     })
                 });
                 
-            return 
-            
-            setTimeout(() => {
+            return setTimeout(() => {
                 compra.vaciarLocalStorage();
                 enviado.remove();
                 window.location = "index.html";
