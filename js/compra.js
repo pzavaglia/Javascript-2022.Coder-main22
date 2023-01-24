@@ -48,20 +48,19 @@ function procesarCompra() {
         })
     }
     else {
-        
-        //aqui se coloca el user id generado en el emailJS
+        //id de servicio de email
         (function () {
             emailjs.init("user_CEozz2F39lJJOLF5mJiDA");
         })();
 
-        var myform = $("form#procesar-pago");
+        const myform = $("form#procesar-pago");
 
         myform.submit( (event) => {
             event.preventDefault();
 
-            // Change to your service ID, or keep using the default service
-            var service_id = "default_service";
-            var template_id = "template_3SA9LsqQ";
+            // servicio de msj
+            const service_id = "default_service";
+            const template_id = "template_3SA9LsqQ";
 
             const cargandoGif = document.querySelector('#cargando');
             cargandoGif.style.display = 'block';
@@ -82,13 +81,25 @@ function procesarCompra() {
                         window.location = "index.html";
                     }, 2000);
 
-
-                }, (err) => {
-                    alert("Error al enviar el email\r\n Response:\n " + JSON.stringify(err));
-                    // myform.find("button").text("Send");
+                }, 
+                
+                (finalizado) => {
+                    Swal.fire({
+                        type: 'info',
+                        title: 'felicitaciones, su compra ha sido exitosa',
+                        text: 'Ingrese todos los campos requeridos',
+                        showConfirmButton: false,
+                        timer: 4000
+                    })
                 });
-
-            return false;
+                
+            return 
+            
+            setTimeout(() => {
+                compra.vaciarLocalStorage();
+                enviado.remove();
+                window.location = "index.html";
+            }, 4000);
 
         });
 
